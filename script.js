@@ -9,7 +9,7 @@ Promise.any(promises).then((value) => {
 });
 
 function promise1(){
-	const random = Math.floor(Math.random() *  6) + 1;
+	const random = Math.floor(Math.random() *  5) + 1;
 	return new Promise((resolve,reject)=>{
 		setTimeout(()=>{
 		resolve("Promise 1")
@@ -18,7 +18,7 @@ function promise1(){
 }
 
 function promise2(){
-	const random = Math.floor(Math.random() *  6) + 1;
+	const random = Math.floor(Math.random() *  5) + 1;
 	return new Promise((resolve,reject)=>{
 		setTimeout(()=>{
 		resolve("Promise 2")
@@ -27,7 +27,7 @@ function promise2(){
 }
 
 function promise3(){
-	const random = Math.floor(Math.random() *  6) + 1;
+	const random = Math.floor(Math.random() *  5) + 1;
 	return new Promise((resolve,reject)=>{
 		setTimeout(()=>{
 		resolve("Promise 3")
@@ -36,7 +36,7 @@ function promise3(){
 }
 
 function promise4(){
-	const random = Math.floor(Math.random() *  6) + 1;
+	const random = Math.floor(Math.random() *  5) + 1;
 	return new Promise((resolve,reject)=>{
 		setTimeout(()=>{
 		resolve("Promise 4")
@@ -45,7 +45,7 @@ function promise4(){
 }
 
 function promise5(){
-	const random = Math.floor(Math.random() *  6) + 1;
+	const random = Math.floor(Math.random() *  5) + 1;
 	return new Promise((resolve,reject)=>{
 		setTimeout(()=>{
 		resolve("Promise 5")
