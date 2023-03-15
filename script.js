@@ -2,7 +2,7 @@ window.promises = [];
 
 //Do not change the code above this
 //add your promises to the array `promises`
-promises = [promise1,promise2,promise3,promise4,promise5]
+promises = [promise1(),promise2(),promise3(),promise4(),promise5()]
 
 Promise.any(promises).then((value) => {
 	document.getElementById("output").innerText = value;
@@ -14,7 +14,7 @@ function promise1(){
 		setTimeout(()=>{
 		resolve("Promise 1")
 	    },random)
-	}
+	})
 }
 
 function promise2(){
@@ -23,7 +23,7 @@ function promise2(){
 		setTimeout(()=>{
 		resolve("Promise 2")
 	    },random)
-	}
+	})
 }
 
 function promise3(){
@@ -32,7 +32,7 @@ function promise3(){
 		setTimeout(()=>{
 		resolve("Promise 3")
 	    },random)
-	}
+	})
 }
 
 function promise4(){
@@ -41,7 +41,7 @@ function promise4(){
 		setTimeout(()=>{
 		resolve("Promise 4")
 	    },random)
-	}
+	})
 }
 
 function promise5(){
@@ -50,5 +50,5 @@ function promise5(){
 		setTimeout(()=>{
 		resolve("Promise 5")
 	    },random)
-	}
+	})
 }
